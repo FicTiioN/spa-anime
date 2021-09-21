@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IAnime } from 'src/app/interface/ianime';
 
 @Component({
   selector: 'app-card-anime',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardAnimeComponent implements OnInit {
 
+  @Input() 
+  public anime: IAnime;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+

@@ -8,6 +8,8 @@ import { AnimeComponent } from './components/anime/anime.component';
 import { AnimeDetailComponent } from './components/anime-detail/anime-detail.component';
 import { EpisodioComponent } from './components/episodio/episodio.component';
 import { EpisodioListComponent } from './components/episodio-list/episodio-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material-module';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,14 @@ import { EpisodioListComponent } from './components/episodio-list/episodio-list.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[
+    MaterialModule
+  ]
 })
 export class AppModule { }
