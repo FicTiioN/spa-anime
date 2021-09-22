@@ -1,3 +1,14 @@
-<div>
-  <app-card-anime *ngFor="let a of array_anime" [anime]="a"></app-card-anime>
+<div style="height: 600px; width: 100%; background-image: url('https://cabanadoleitor.com.br/wp-content/uploads/2021/07/Demon-Slayer.jpg'); background-size: cover;">
+</div>
+
+<div style="position: absolute; right: 0; left: 0; top: 0; height: 600px; background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));"></div>
+
+<div style="margin-top: -80px;">
+
+  <h1 style="color: white; margin-left: 50px; filter: brightness(100%);">10 Animes mais recomendados !!!</h1>
+
+  <owl-carousel [options]="{items: 3, dots: false, navigation: true, margin: 15}" [items]="array_anime"
+    [carouselClasses]="['owl-theme', 'row', 'sliding']">
+    <app-card-anime *ngFor="let a of array_anime" [anime]="a"></app-card-anime>
+  </owl-carousel>
 </div>

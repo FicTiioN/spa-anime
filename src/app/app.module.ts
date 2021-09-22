@@ -10,6 +10,7 @@ import { EpisodioComponent } from './components/episodio/episodio.component';
 import { EpisodioListComponent } from './components/episodio-list/episodio-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MaterialModule } from './material-module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent],
