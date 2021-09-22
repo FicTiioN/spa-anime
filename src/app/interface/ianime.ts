@@ -6,4 +6,5 @@ export interface IAnime {
     img: string;
     rating: string;
     studio: string;
+    trailer: string;
   }

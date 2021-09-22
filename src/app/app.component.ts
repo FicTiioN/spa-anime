@@ -17,7 +17,8 @@ export class AppComponent {
       "episode": 500,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Studio Pierrot",
-      "img": "https://br.web.img2.acsta.net/pictures/17/02/01/13/28/337995.jpg"
+      "img": "https://br.web.img2.acsta.net/pictures/17/02/01/13/28/337995.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "One Piece",
@@ -26,7 +27,8 @@ export class AppComponent {
       "episode": 700,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Toei Animation",
-      "img": "https://img.olhardigital.com.br/wp-content/uploads/2021/09/8d2edcf0fc320d63f3ab79151da71c8a1630234262_main-652x1024.jpg"
+      "img": "https://img.olhardigital.com.br/wp-content/uploads/2021/09/8d2edcf0fc320d63f3ab79151da71c8a1630234262_main-652x1024.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Attack on Titan",
@@ -35,7 +37,8 @@ export class AppComponent {
       "episode": 500,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Wit Studio",
-      "img": "https://jovemnerd.com.br/wp-content/uploads/2020/09/attack-on-titan-temporada-final-poster.jpg"
+      "img": "https://jovemnerd.com.br/wp-content/uploads/2020/09/attack-on-titan-temporada-final-poster.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Monster",
@@ -44,7 +47,8 @@ export class AppComponent {
       "episode": 70,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Madhouse",
-      "img": "https://media.fstatic.com/Hwi6E-cW5THZDndNkGJmiWyD1QI=/290x478/smart/media/movies/covers/2021/05/images_QhcGo8j.jpeg"
+      "img": "https://media.fstatic.com/Hwi6E-cW5THZDndNkGJmiWyD1QI=/290x478/smart/media/movies/covers/2021/05/images_QhcGo8j.jpeg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Death Note",
@@ -53,7 +57,8 @@ export class AppComponent {
       "episode": 500,
       "categorie": "Animation | Adventure",
       "studio": "Madhouse",
-      "img": "https://cdn.culturagenial.com/imagens/death-note-cartaz.jpg"
+      "img": "https://cdn.culturagenial.com/imagens/death-note-cartaz.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Violet Evergarden",
@@ -62,7 +67,8 @@ export class AppComponent {
       "episode": 14,
       "categorie": "Fantasy | Drama ",
       "studio": "Kyoto Animation",
-      "img": "https://jovemnerd.com.br/wp-content/uploads/2019/04/violet-evergarden-filme-poser.jpg"
+      "img": "https://jovemnerd.com.br/wp-content/uploads/2019/04/violet-evergarden-filme-poser.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Tokyo Ghoul",
@@ -71,7 +77,8 @@ export class AppComponent {
       "episode": 12,
       "categorie": "Action | Mystery",
       "studio": "Studio Pierrot",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/61HlNZSoIZL.jpg"
+      "img": "https://images-na.ssl-images-amazon.com/images/I/61HlNZSoIZL.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Black Clover",
@@ -80,7 +87,8 @@ export class AppComponent {
       "episode": 51,
       "categorie": "Magic | Shounen | Adventure",
       "studio": "Studio Pierrot",
-      "img": "https://i1.wp.com/dropescan.com/wp-content/uploads/black_clover_vol.29.jpg?fit=509%2C800&ssl=1"
+      "img": "https://i1.wp.com/dropescan.com/wp-content/uploads/black_clover_vol.29.jpg?fit=509%2C800&ssl=1",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Sword Art Online",
@@ -89,7 +97,8 @@ export class AppComponent {
       "episode": 25,
       "categorie": "Drama | Adventure",
       "studio": "A-1 Pictures",
-      "img": "https://img.assinaja.com/assets/tZ/004/img/219084_520x520.jpg"
+      "img": "https://img.assinaja.com/assets/tZ/004/img/219084_520x520.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Nanatsu no Taizai",
@@ -98,7 +107,8 @@ export class AppComponent {
       "episode": 24,
       "categorie": "Animation | Drama | Adventure",
       "studio": "A-1 Pictures",
-      "img": "https://br.web.img2.acsta.net/pictures/20/08/11/20/56/3761241.jpg"
+      "img": "https://br.web.img2.acsta.net/pictures/20/08/11/20/56/3761241.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Kiseijuu: Sei no Kakuritsu",
@@ -107,7 +117,8 @@ export class AppComponent {
       "episode": 24,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Madhouse",
-      "img": "https://animefire.net/img/animes/kiseijuu-sei-no-kakuritsu-large.webp?v=1"
+      "img": "https://animefire.net/img/animes/kiseijuu-sei-no-kakuritsu-large.webp?v=1",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     },
     {
       "name": "Hunter x Hunter (2011)",
@@ -116,7 +127,8 @@ export class AppComponent {
       "episode": 148,
       "categorie": "Animation | Drama | Adventure",
       "studio": "Madhouse",
-      "img": "https://animesonehd.xyz/wp-content/uploads/2019/10/Hunter-x-Hunter-online-em-HD.jpg"
+      "img": "https://animesonehd.xyz/wp-content/uploads/2019/10/Hunter-x-Hunter-online-em-HD.jpg",
+      "trailer": "https://www.youtube.com/embed/thh7bVCgDHs",
     }
 
   ];
