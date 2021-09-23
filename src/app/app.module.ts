@@ -11,6 +11,7 @@ import { EpisodioListComponent } from './components/episodio-list/episodio-list.
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { OwlModule } from 'ngx-owl-carousel';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { OwlModule } from 'ngx-owl-carousel';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    OwlModule
+    OwlModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

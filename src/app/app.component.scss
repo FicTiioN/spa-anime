@@ -1,0 +1,80 @@
+$primary-color: #673ab7;
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.background-image {
+    height: 600px;
+    width: 100%;
+    background-image: url("https://cdn.wallpapersafari.com/85/11/XWpjQT.jpg");
+    background-size: cover;
+}
+
+.background-shadow {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 600px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.navbar {
+    background-color: transparent;
+    transition: all 0.5s ease;
+    position: fixed;
+    z-index: 2;
+
+    .menu-link{
+        margin: 0 10px;
+    }
+}
+
+.active-color {
+    background-color: $primary-color !important;
+    -webkit-box-shadow: 3px 9px 21px -6px #000000;
+    box-shadow: 3px 9px 21px -6px #000000;
+}
+
+.navbar.active-color .menu-link {
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.navbar.active-color .login-link {
+    transition: all 0.5s ease;
+    background-color: white;
+    color: $primary-color;
+}
+
+.navbar.active-color .login-link .icon {
+    transition: all 0.5s ease;
+    color: $primary-color !important;
+}
+
+.form {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px; /* required */
+    margin: 200px auto 0 auto;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 3;
+}
+
+.full-width {
+    width: 100%;
+    position: sticky;
+}
+
+::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+}
+
+::ng-deep .mat-form-field-underline::before {
+    /*change color of underline*/
+    background-color: white !important;
+}

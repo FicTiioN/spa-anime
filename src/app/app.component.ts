@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 import { IAnime } from './interface/ianime';
 
 @Component({
@@ -6,7 +9,7 @@ import { IAnime } from './interface/ianime';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'spa-anime';
 
   public array_anime: Array<IAnime> = [
@@ -133,4 +136,40 @@ export class AppComponent {
 
   ];
 
+  public myControl = new FormControl();
+  public filteredOptions: Observable<User[]>;
+
+  ngOnInit() {
+
+    this.filteredOptions = this.myControl.valueChanges
+      .pipe(
+        startWith(''),
+        map(value => typeof value === 'string' ? value : value.name),
+        map(name => name ? this._filter(name) : this.array_anime.slice())
+      );
+  }
+
+  public displayFn(user: IAnime): string {
+    return user && user.name ? user.name : '';
+  }
+
+  private _filter(name: string): User[] {
+    const filterValue = name.toLowerCase();
+
+    return this.array_anime.filter(option => option.name.toLowerCase().includes(filterValue));
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  public onWindowScroll() {
+    let element = document.querySelector('.navbar') as HTMLElement;
+    if (window.pageYOffset > element.clientHeight) {
+      element.classList.add('active-color');
+    } else {
+      element.classList.remove('active-color');
+    }
+  }
+}
+
+export interface User {
+  name: string;
 }

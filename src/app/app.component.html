@@ -1,7 +1,33 @@
-<div style="height: 600px; width: 100%; background-image: url('https://cabanadoleitor.com.br/wp-content/uploads/2021/07/Demon-Slayer.jpg'); background-size: cover;">
+<div class="background-image">
+
 </div>
 
-<div style="position: absolute; right: 0; left: 0; top: 0; height: 600px; background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));"></div>
+<div class="background-shadow">
+
+  <mat-toolbar class="navbar">
+    <button mat-button class="menu-link">Anime</button>
+    <button mat-button class="menu-link">Filme</button>
+    <button mat-button class="menu-link">Manga</button>
+    <span class="spacer"></span>
+    <button mat-raised-button class="login-link" color="primary">
+      Acessar &nbsp;
+      <mat-icon matSuffix class="icon" style="color: white;">login</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <form class="form">
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Pesquise o seu anime preferido aqui</mat-label>
+      <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option.name}}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-icon matSuffix style="color: white;">search</mat-icon>
+    </mat-form-field>
+  </form>
+</div>
 
 <div style="margin-top: -80px;">
 
@@ -12,3 +38,32 @@
     <app-card-anime *ngFor="let a of array_anime" [anime]="a"></app-card-anime>
   </owl-carousel>
 </div>
+
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
+<h1>Scroll</h1>
