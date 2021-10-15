@@ -1,4 +1,4 @@
-$primary-color: #673ab7;
+$primary-color: #EF6C00;
 
 .spacer {
     flex: 1 1 auto;
@@ -67,6 +67,10 @@ $primary-color: #673ab7;
 .full-width {
     width: 100%;
     position: sticky;
+}
+
+.myGridList {
+    height: 100%;
 }
 
 ::ng-deep .mat-form-field-label {
